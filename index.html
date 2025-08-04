@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #1a5c1a; /* Verde escuro principal */
-            --secondary-color: #0d3d0d; /* Verde mais escuro para contrastes */
-            --accent-color: #4CAF50; /* Verde vibrante para destaques */
+            --primary-color: #1a5c1a; 
+            --secondary-color: #0d3d0d; 
+            --accent-color: #4CAF50; 
             --text-color: #333;
             --bg-color: #f5f7fa;
             --card-color: #fff;
@@ -22,7 +22,7 @@
         }
 
         [data-theme="dark"] {
-            --primary-color: #2E7D32; /* Verde mais claro no dark mode */
+            --primary-color: #2E7D32; 
             --secondary-color: #1B5E20;
             --accent-color: #4CAF50;
             --text-color: #f0f0f0;
@@ -55,7 +55,7 @@
             padding: 0 20px;
         }
 
-        /* Header Styles */
+        
         header {
             background-color: var(--primary-color);
             color: white;
@@ -152,7 +152,7 @@
             cursor: pointer;
         }
 
-        /* Main Content Layout */
+        
         .app-container {
             display: flex;
             min-height: calc(100vh - 70px);
@@ -217,7 +217,7 @@
             color: var(--primary-color);
         }
 
-        /* Card Styles */
+       
         .card {
             background-color: var(--card-color);
             border-radius: var(--border-radius);
@@ -241,7 +241,7 @@
             color: var(--primary-color);
         }
 
-        /* Button Styles */
+        
         .btn {
             padding: 10px 20px;
             border-radius: var(--border-radius);
@@ -285,7 +285,7 @@
             transform: translateY(-2px);
         }
 
-        /* Table Styles */
+        
         .table {
             width: 100%;
             border-collapse: collapse;
@@ -317,7 +317,7 @@
             font-size: 0.9rem;
         }
 
-        /* Form Styles */
+        
         .form-group {
             margin-bottom: 1rem;
         }
@@ -354,7 +354,7 @@
             flex: 1;
         }
 
-        /* Alert Messages */
+        
         .alert {
             padding: 15px;
             border-radius: var(--border-radius);
@@ -382,7 +382,7 @@
             color: var(--warning-color);
         }
 
-        /* Badges */
+        
         .badge {
             display: inline-block;
             padding: 3px 8px;
@@ -411,7 +411,7 @@
             color: white;
         }
 
-        /* Modal */
+        
         .modal {
             display: none;
             position: fixed;
@@ -453,7 +453,7 @@
             color: var(--primary-color);
         }
 
-        /* Confirmation Dialog */
+       
         .confirmation-dialog {
             display: none;
             position: fixed;
@@ -484,7 +484,7 @@
             margin-top: 1.5rem;
         }
 
-        /* Responsive Styles */
+       
         @media (max-width: 992px) {
             .sidebar {
                 width: 70px;
@@ -561,13 +561,13 @@
             }
         }
 
-        /* Accessibility Focus Styles */
+        
         a:focus, button:focus, input:focus, textarea:focus, select:focus {
             outline: 2px solid var(--accent-color);
             outline-offset: 2px;
         }
 
-        /* Skip to Content Link */
+        
         .skip-link {
             position: absolute;
             top: -40px;
@@ -583,7 +583,7 @@
             top: 0;
         }
 
-        /* Dashboard Widgets */
+        
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -611,7 +611,7 @@
             opacity: 0.8;
         }
 
-        /* Calendar */
+        
         .calendar {
             width: 100%;
             border-collapse: collapse;
@@ -659,7 +659,7 @@
             color: #9b59b6;
         }
 
-        /* Timeline */
+        
         .timeline {
             position: relative;
             padding-left: 30px;
@@ -706,7 +706,7 @@
             margin-top: 5px;
         }
 
-        /* Profile Page */
+        
         .profile-header {
             display: flex;
             align-items: center;
@@ -736,7 +736,7 @@
             opacity: 0.8;
         }
 
-        /* Responsive Calendar */
+        
         @media (max-width: 600px) {
             .calendar th, .calendar td {
                 padding: 5px;
@@ -755,10 +755,10 @@
     </style>
 </head>
 <body>
-    <!-- Skip to Content Link for Accessibility -->
+   
     <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-    <!-- Header with Navigation -->
+   
     <header>
         <div class="container header-container">
             <div class="logo">
@@ -787,9 +787,9 @@
         </div>
     </header>
 
-    <!-- Main App Container -->
+    
     <div class="app-container">
-        <!-- Sidebar -->
+        
         <aside class="sidebar">
             <ul class="sidebar-menu">
                 <li>
@@ -837,9 +837,9 @@
             </ul>
         </aside>
 
-        <!-- Main Content Area -->
+        
         <main class="main-content" id="main-content">
-            <!-- Dashboard Page (Default View) -->
+            
             <div id="dashboard-page" class="page">
                 <div class="page-header">
                     <h1 class="page-title">Dashboard</h1>
@@ -850,13 +850,13 @@
                     </div>
                 </div>
                 
-                <!-- Alert Message Example -->
+                
                 <div class="alert alert-success" id="success-alert" style="display: none;">
                     <i class="fas fa-check-circle"></i>
                     <span>Medicamento adicionado com sucesso! Um lembrete será enviado no horário programado.</span>
                 </div>
                 
-                <!-- Stats Widgets -->
+               
                 <div class="stats-grid">
                     <div class="stat-card">
                         <i class="fas fa-pills fa-2x" style="color: var(--success-color);"></i>
@@ -880,7 +880,7 @@
                     </div>
                 </div>
                 
-                <!-- Upcoming Medications -->
+               
                 <div class="card">
                     <div class="card-header">
                         <h2 class="card-title">Próximos Medicamentos</h2>
@@ -947,7 +947,7 @@
                     </div>
                 </div>
                 
-                <!-- Upcoming Appointments -->
+                
                 <div class="card">
                     <div class="card-header">
                         <h2 class="card-title">Próximas Consultas</h2>
@@ -983,7 +983,7 @@
                 </div>
             </div>
             
-            <!-- Medications Page -->
+           
             <div id="medications-page" class="page" style="display: none;">
                 <div class="page-header">
                     <h1 class="page-title">Meus Medicamentos</h1>
@@ -1094,7 +1094,7 @@
                 </div>
             </div>
             
-            <!-- Appointments Page -->
+            
             <div id="appointments-page" class="page" style="display: none;">
                 <div class="page-header">
                     <h1 class="page-title">Minhas Consultas</h1>
@@ -1336,7 +1336,7 @@
                 </div>
             </div>
             
-            <!-- Reports Page -->
+           
             <div id="reports-page" class="page" style="display: none;">
                 <div class="page-header">
                     <h1 class="page-title">Relatórios e Estatísticas</h1>
@@ -1416,7 +1416,7 @@
                 </div>
             </div>
             
-            <!-- Profile Page -->
+            
             <div id="profile-page" class="page" style="display: none;">
                 <div class="page-header">
                     <h1 class="page-title">Meu Perfil</h1>
@@ -1509,7 +1509,7 @@
         </main>
     </div>
 
-    <!-- Add Medication Modal -->
+    
     <div class="modal" id="medication-modal" aria-hidden="true" aria-labelledby="medication-modal-title">
         <div class="modal-content">
             <button class="close-modal" aria-label="Fechar modal de medicamento">&times;</button>
@@ -1598,7 +1598,7 @@
         </div>
     </div>
 
-    <!-- Add Appointment Modal -->
+   
     <div class="modal" id="appointment-modal" aria-hidden="true" aria-labelledby="appointment-modal-title">
         <div class="modal-content">
             <button class="close-modal" aria-label="Fechar modal de consulta">&times;</button>
@@ -1670,7 +1670,7 @@
         </div>
     </div>
 
-    <!-- Confirmation Dialog -->
+    
     <div class="confirmation-dialog" id="confirmation-dialog" aria-hidden="true">
         <div class="dialog-content">
             <h2>Tem certeza?</h2>
@@ -1683,11 +1683,11 @@
     </div>
 
     <script>
-        // Theme Toggle Functionality
+        
         const themeToggle = document.getElementById('theme-toggle');
         const currentTheme = localStorage.getItem('theme') || 'light';
         
-        // Set initial theme
+        
         if (currentTheme === 'dark') {
             document.documentElement.setAttribute('data-theme', 'dark');
             themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
@@ -1707,7 +1707,7 @@
             }
         });
         
-        // Mobile Menu Toggle
+       
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
         
@@ -1717,7 +1717,7 @@
             mobileMenuBtn.setAttribute('aria-expanded', isExpanded);
         });
         
-        // Close mobile menu when clicking on a link
+        
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -1725,7 +1725,7 @@
             });
         });
         
-        // Page Navigation
+        
         const pages = {
             'dashboard': document.getElementById('dashboard-page'),
             'medications': document.getElementById('medications-page'),
@@ -1743,28 +1743,28 @@
         };
         
         function showPage(pageId) {
-            // Hide all pages
+            
             Object.values(pages).forEach(page => {
                 page.style.display = 'none';
             });
             
-            // Remove active class from all nav buttons
+            
             Object.values(navButtons).forEach(buttons => {
                 buttons.forEach(button => {
                     button.classList.remove('active');
                 });
             });
             
-            // Show selected page
+            
             pages[pageId].style.display = 'block';
             
-            // Add active class to selected nav buttons
+            
             navButtons[pageId].forEach(button => {
                 button.classList.add('active');
             });
         }
         
-        // Set up event listeners for navigation
+        
         document.getElementById('nav-dashboard').addEventListener('click', (e) => {
             e.preventDefault();
             showPage('dashboard');
@@ -1815,7 +1815,7 @@
             showPage('profile');
         });
         
-        // Modal Handling
+        
         const medicationModal = document.getElementById('medication-modal');
         const appointmentModal = document.getElementById('appointment-modal');
         const closeModals = document.querySelectorAll('.close-modal');
@@ -1824,7 +1824,7 @@
         const dialogConfirm = document.getElementById('dialog-confirm');
         const successAlert = document.getElementById('success-alert');
         
-        // Open medication modal
+        
         document.getElementById('add-medication-btn').addEventListener('click', () => {
             medicationModal.style.display = 'flex';
             document.body.style.overflow = 'hidden';
@@ -1837,14 +1837,14 @@
             medicationModal.setAttribute('aria-hidden', 'false');
         });
         
-        // Open appointment modal
+        
         document.getElementById('new-appointment-btn').addEventListener('click', () => {
             appointmentModal.style.display = 'flex';
             document.body.style.overflow = 'hidden';
             appointmentModal.setAttribute('aria-hidden', 'false');
         });
         
-        // Close modals
+        
         closeModals.forEach(closeBtn => {
             closeBtn.addEventListener('click', function() {
                 const modal = this.closest('.modal');
@@ -1854,7 +1854,7 @@
             });
         });
         
-        // Close modals when clicking outside
+        
         window.addEventListener('click', (e) => {
             if (e.target === medicationModal) {
                 medicationModal.style.display = 'none';
@@ -1875,17 +1875,17 @@
             }
         });
         
-        // Form Submission with Feedback
+        
         document.getElementById('medication-form').addEventListener('submit', (e) => {
             e.preventDefault();
             
-            // Simulate save process
+            
             setTimeout(() => {
                 medicationModal.style.display = 'none';
                 document.body.style.overflow = 'auto';
                 medicationModal.setAttribute('aria-hidden', 'true');
                 
-                // Show success message
+                
                 successAlert.style.display = 'flex';
                 setTimeout(() => {
                     successAlert.style.display = 'none';
@@ -1896,13 +1896,13 @@
         document.getElementById('appointment-form').addEventListener('submit', (e) => {
             e.preventDefault();
             
-            // Simulate save process
+           
             setTimeout(() => {
                 appointmentModal.style.display = 'none';
                 document.body.style.overflow = 'auto';
                 appointmentModal.setAttribute('aria-hidden', 'true');
                 
-                // Show success message
+                
                 successAlert.style.display = 'flex';
                 successAlert.querySelector('span').textContent = 'Consulta agendada com sucesso! Um lembrete será enviado conforme configurado.';
                 setTimeout(() => {
@@ -1911,7 +1911,7 @@
             }, 1000);
         });
         
-        // Confirmation Dialog Example
+        
         document.querySelectorAll('.btn-danger').forEach(btn => {
             if (btn.id !== 'dialog-confirm') {
                 btn.addEventListener('click', function(e) {
@@ -1935,7 +1935,7 @@
             document.body.style.overflow = 'auto';
             confirmationDialog.setAttribute('aria-hidden', 'true');
             
-            // Show success message
+           
             successAlert.style.display = 'flex';
             successAlert.querySelector('span').textContent = 'Item excluído com sucesso.';
             setTimeout(() => {
@@ -1943,7 +1943,7 @@
             }, 5000);
         });
         
-        // Time slot management for medication form
+        
         function addTimeSlot() {
             const timeSlotsContainer = document.getElementById('time-slots');
             const newSlot = document.createElement('div');
@@ -1967,26 +1967,26 @@
             if (document.querySelectorAll('.time-slot').length > 1) {
                 slot.remove();
             } else {
-                // Don't remove the last time slot, just clear it
+                
                 slot.querySelector('input[type="time"]').value = '';
             }
         }
         
-        // Initialize with one time slot
+       
         addTimeSlot();
         
-        // Set today's date as default for medication start date
+        
         const today = new Date();
         const formattedDate = today.toISOString().substr(0, 10);
         document.getElementById('med-start').value = formattedDate;
         
-        // Set tomorrow's date as default for appointment date
+        
         const tomorrow = new Date();
         tomorrow.setDate(today.getDate() + 1);
         const formattedTomorrow = tomorrow.toISOString().substr(0, 10);
         document.getElementById('appointment-date').value = formattedTomorrow;
         
-        // Show dashboard by default
+        
         showPage('dashboard');
     </script>
 </body>
